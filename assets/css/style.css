@@ -1,0 +1,16 @@
+.header{
+    padding: 0px;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.search-bar{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color:cadetblue;
+}
