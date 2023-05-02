@@ -1,12 +1,10 @@
 .header{
-    padding: 0px;
     text-align: center;
-    font-size: 30px;
-    font-family: monospace;
+    font-size: 75px;
+    font-family:'Brush Script MT';
 }
 
 .search-bar{
-    padding: 0px;
     display: flex;
     justify-content: center;
 }
@@ -17,19 +15,26 @@ body{
 
 
 .container1{
-    float: left;
-    width: 100;
     background-color: rgb(145, 137, 161);
-    height: 500px;
-    width: 600px;
+    height: 700px;
+    width: 1800px;
 
 }
 
-.container2{
-    float:right;
-    width: 100;
-    background-color: rgb(145, 137, 161);
-    border: 15px;
-    height: 500px;
-    width: 600px;
+
+.search-button{
+    background-color: rgb(210, 201, 224);
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+}
+
+.mySearch{
+    width: 500px;
+    font-size: 30px;
+}
+
+
+.signature{
+    font-size: 30px;
 }
