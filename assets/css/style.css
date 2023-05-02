@@ -12,5 +12,24 @@
 }
 
 body{
-    background-color:cadetblue;
+    background-color:#4B4453;
+}
+
+
+.container1{
+    float: left;
+    width: 100;
+    background-color: rgb(145, 137, 161);
+    height: 500px;
+    width: 600px;
+
+}
+
+.container2{
+    float:right;
+    width: 100;
+    background-color: rgb(145, 137, 161);
+    border: 15px;
+    height: 500px;
+    width: 600px;
 }
