@@ -25,7 +25,7 @@ inputUser.addEventListener('keypress', function (event) {
     }
 })
 
-function 
+/* function 
     var url = 
     url: `https://check-username.p.rapidapi.com/check/${url}/${username}`;
 
@@ -40,7 +40,7 @@ function
       }
       
       checksocial("blah")
-
+ */ 
 function authenticate() {
     return gapi.auth2.getAuthInstance()
         .signIn({ scope: "https://www.googleapis.com/auth/youtube.readonly" })
