@@ -30,7 +30,7 @@ inputUser.addEventListener('keypress', function (event) {
     url: `https://check-username.p.rapidapi.com/check/${url}/${username}`;
 
     function checksocial(username) {
-        // console.log("HELLO WORLD!")
+        console.log("HELLO WORLD!")
         fetch(https://    .then(function (res) {
             return res.json()
           })
@@ -40,10 +40,10 @@ inputUser.addEventListener('keypress', function (event) {
       }
       
       checksocial("blah")
-      */
-
+ */ 
 function authenticate() {
-  return gapi.auth2.getAuthInstance()
+  return gap
+  i.auth2.getAuthInstance()
     .signIn({
       scope: "https://www.googleapis.com/auth/youtube.readonly)"
         .then(function () { console.log("Sign-in successful"); },
@@ -57,6 +57,7 @@ function loadClient() {
     .then(function () { console.log("GAPI client loaded for API"); },
       function (err) { console.error("Error loading GAPI client for API", err); });
 }
+
 // Make sure the client is loaded and sign-in is complete before calling this method.
 function execute() {
   return gapi.client.youtube.channels.list({
@@ -71,6 +72,7 @@ function execute() {
     },
       function (err) { console.error("Execute error", err); });
 }
+
 gapi.load("client:auth2", function () {
   gapi.auth2.init({ client_id: "YOUR_CLIENT_ID" });
 });
