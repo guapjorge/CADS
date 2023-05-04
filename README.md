@@ -2,7 +2,7 @@
 
 
 ## Description
-This is a web application that allows users to search for usernames across various platforms and social media networks. The application searches for a username across multiple platforms, and provides the user with links to any profiles that match the search query.
+This is a web application that allows users to search for usernames across various media networks. The application searches for a username across multiple platforms, and provides the user with links to any profiles that match the search query.
 
 ## Table of Contents
 
