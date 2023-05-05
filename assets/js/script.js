@@ -40,7 +40,7 @@ inputUser.addEventListener('keypress', function (event) {
       }
       
       checksocial("blah")
- */ 
+ */
 function authenticate() {
   return gap
   i.auth2.getAuthInstance()
@@ -84,9 +84,13 @@ function checksocial(username) {
     .then(function (res) {
       return res.json()
     })
+  console.log(data)
     .then(function (data) {
-      console.log(data)
     })
 }
 
 checksocial("username")
+
+
+const username = document.getElementById('username-search-field').value; // retrieve the username from the search field
+localStorage.setItem('last-searched-username', username); // store the username in local storage with a key of 'last-searched-username'
