@@ -1,21 +1,9 @@
 var inputUser = document.querySelector('#input-username')
 var searchButton = document.querySelector('#search-button')
-/* function findUserName(id) {
-    fetch('https://www.googleapis.com/youtube/v3/channels&appid=AIzaSyAIkxCpJ31trsgp_oqRjz9IflOIUIOjiUw')
-    fetch(https://    .then(function (res) {
-            return res.json()
-          })
-          .then(function (data) {
-            console.log(data)
-          })
-      }
-      
-      checksocial("blah")
-} */
-
 searchButton.addEventListener('click', function () {
   var searchedUser = inputUser.value
-  findUserName(searchedUser)
+  // execute(searchedUser)
+  checksocial(searchedUser)
 })
 
 inputUser.addEventListener('keypress', function (event) {
@@ -25,6 +13,7 @@ inputUser.addEventListener('keypress', function (event) {
   }
 })
 
+<<<<<<< HEAD
 /* function 
     var url = 
     url: `https://check-username.p.rapidapi.com/check/${url}/${username}`;
@@ -41,9 +30,10 @@ inputUser.addEventListener('keypress', function (event) {
       
       checksocial("blah")
  */
+=======
+>>>>>>> 6a8101d66edff516bf18ec052149e0988358ddfa
 function authenticate() {
-  return gap
-  i.auth2.getAuthInstance()
+  return gapi.auth2.getAuthInstance()
     .signIn({
       scope: "https://www.googleapis.com/auth/youtube.readonly)"
         .then(function () { console.log("Sign-in successful"); },
@@ -59,12 +49,12 @@ function loadClient() {
 }
 
 // Make sure the client is loaded and sign-in is complete before calling this method.
-function execute() {
+function execute(username) {
   return gapi.client.youtube.channels.list({
     "part": [
       "snippet,contentDetails,statistics"
     ],
-    "forUsername": "USERNAME_HERE"
+    "forUsername": username
   })
     .then(function (response) {
       // Handle the results here (response.result has the parsed body).
@@ -73,14 +63,9 @@ function execute() {
       function (err) { console.error("Execute error", err); });
 }
 
-gapi.load("client:auth2", function () {
-  gapi.auth2.init({ client_id: "YOUR_CLIENT_ID" });
-});
-
-
 function checksocial(username) {
 
-  fetch('https://checkmarks.com/api/v1/username/account/ARS2989/password/cQgPy9VnDN')
+  fetch('https://checkmarks.com/api/v1/username/'+username+'/account/ARS2989/password/cQgPy9VnDN')
     .then(function (res) {
       return res.json()
     })
