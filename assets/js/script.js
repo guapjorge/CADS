@@ -13,6 +13,25 @@ inputUser.addEventListener('keypress', function (event) {
   }
 })
 
+<<<<<<< HEAD
+/* function 
+    var url = 
+    url: `https://check-username.p.rapidapi.com/check/${url}/${username}`;
+
+    function checksocial(username) {
+        console.log("HELLO WORLD!")
+        fetch(https://    .then(function (res) {
+            return res.json()
+          })
+          .then(function (data) {
+            console.log(data)
+          })
+      }
+      
+      checksocial("blah")
+ */
+=======
+>>>>>>> 6a8101d66edff516bf18ec052149e0988358ddfa
 function authenticate() {
   return gapi.auth2.getAuthInstance()
     .signIn({
@@ -50,9 +69,13 @@ function checksocial(username) {
     .then(function (res) {
       return res.json()
     })
+  console.log(data)
     .then(function (data) {
-      console.log(data)
     })
 }
 
 checksocial("username")
+
+
+const username = document.getElementById('username-search-field').value; // retrieve the username from the search field
+localStorage.setItem('last-searched-username', username); // store the username in local storage with a key of 'last-searched-username'
