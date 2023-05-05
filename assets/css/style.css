@@ -9,29 +9,36 @@
     justify-content: center;
 }
 
-body{
+
+body {
     background-color:#4B4453;
 }
 
 
-.container1{
+.container1 {
     background-color: rgb(145, 137, 161);
     height: 700px;
-    width: 1800px;
-
+    width: 100%;
 }
-
 
 .search-button{
     background-color: rgb(210, 201, 224);
     height: 50px;
     width: 200px;
     font-size: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: rgb(91, 76, 116);
+    transition: all 0.3s ease 0s;
 }
 
 .mySearch{
     width: 500px;
     font-size: 30px;
+    border-radius: 7px;
 }
 
 
