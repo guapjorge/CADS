@@ -13,25 +13,6 @@ inputUser.addEventListener('keypress', function (event) {
   }
 })
 
-<<<<<<< HEAD
-/* function 
-    var url = 
-    url: `https://check-username.p.rapidapi.com/check/${url}/${username}`;
-
-    function checksocial(username) {
-        console.log("HELLO WORLD!")
-        fetch(https://    .then(function (res) {
-            return res.json()
-          })
-          .then(function (data) {
-            console.log(data)
-          })
-      }
-      
-      checksocial("blah")
- */
-=======
->>>>>>> 6a8101d66edff516bf18ec052149e0988358ddfa
 function authenticate() {
   return gapi.auth2.getAuthInstance()
     .signIn({
@@ -65,7 +46,7 @@ function execute(username) {
 
 function checksocial(username) {
 
-  fetch('https://checkmarks.com/api/v1/username/'+username+'/account/ARS2989/password/cQgPy9VnDN')
+  fetch('https://checkmarks.com/api/v1/username/' + username + '/account/ARS2989/password/cQgPy9VnDN')
     .then(function (res) {
       return res.json()
     })
